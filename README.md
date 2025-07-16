@@ -1,10 +1,10 @@
-# 🚴 ETL Pipeline: Bike Sales in Europe
+# ETL Pipeline: Bike Sales in Europe
 
 This is a production-ready ETL pipeline built in Python using Pandas and PostgreSQL. It extracts bike sales data from a Kaggle dataset, transforms it using Pandas, and loads it into a PostgreSQL data warehouse using `psycopg2`.
 
 ---
 
-## 📦 Project Overview
+## Project Overview
 
 | Step      | Description                                                       |
 | --------- | ----------------------------------------------------------------- |
@@ -16,7 +16,7 @@ The project includes modular code, environment variables, unit tests, and is rea
 
 ---
 
-## 🏗 Project Structure
+## Project Structure
 
 ```
 etl_bike_sales/
@@ -49,7 +49,7 @@ etl_bike_sales/
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 - **Name:** [Bike Sales in Europe](https://www.kaggle.com/datasets/anujgupta/bike-sales-in-europe)
 - **File:** `Sales.csv`
@@ -60,27 +60,27 @@ etl_bike_sales/
 
 ## ⚙️ Setup Instructions
 
-### 1. 🔧 Clone the repo
+### 1. Clone the repo
 
 ```bash
 git clone https://github.com/your-username/etl_bike_sales.git
 cd etl_bike_sales
 ```
 
-### 2. 🐍 Create and activate a virtual environment
+### 2. Create and activate a virtual environment
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 ```
 
-### 3. 📦 Install Python dependencies
+### 3. Install Python dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. 🛠 Configure environment variables
+### 4. Configure environment variables
 
 Create a `.env` file in the project root:
 
@@ -92,7 +92,7 @@ PG_PASSWORD=yourpassword
 PG_DB=etl_bikes
 ```
 
-### 5. 🧪 Verify PostgreSQL is running
+### 5. Verify PostgreSQL is running
 
 Make sure PostgreSQL is installed and running on your machine. Create the database if needed:
 
@@ -102,7 +102,7 @@ createdb etl_bikes
 
 ---
 
-## 🚀 Running the ETL Pipeline
+## Running the ETL Pipeline
 
 1. Place `Sales.csv` inside `data/raw/`
 2. Run the pipeline:
@@ -117,13 +117,13 @@ python run_etl.py
 ######## Starting ETL Pipeline...
 ############# Extracted 113036 rows from data/raw/Sales.csv #############
 Transformed DataFrame with 113036 rows and 18 columns
-✅ Inserted 113036 rows into table 'bikes'
+ Inserted 113036 rows into table 'bikes'
 ETL Pipeline completed successfully
 ```
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 To validate components individually:
 
@@ -139,7 +139,7 @@ python -m unittest tests/test_load.py
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - Python 3.11+
 - pandas
@@ -150,7 +150,7 @@ python -m unittest tests/test_load.py
 
 ---
 
-## ✅ Future Enhancements
+## Future Enhancements
 
 - Use `COPY FROM` for bulk loading performance
 - Add CI/CD workflow using GitHub Actions
@@ -160,19 +160,19 @@ python -m unittest tests/test_load.py
 
 ---
 
-## 🙌 Credits
+## Credits
 
 - Dataset: [Anuj Gupta on Kaggle](https://www.kaggle.com/datasets/anujgupta/bike-sales-in-europe)
 - Developed by: **Mahmoud Abouzeid**
 
 ---
 
-## 🔒 Disclaimer
+## Disclaimer
 
 Do not commit your `.env` file or credentials to GitHub. Use `.gitignore` to exclude sensitive information.
 
 ---
 
-## 📂 License
+## License
 
 MIT License – free to use, modify, and share.
