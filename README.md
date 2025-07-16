@@ -58,7 +58,7 @@ etl_bike_sales/
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the repo
 
